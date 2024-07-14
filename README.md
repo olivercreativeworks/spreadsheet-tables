@@ -63,3 +63,6 @@ This library will cause [volatile functions](https://support.google.com/docs/ans
 
 ## Other
 This project was created using `bun init` in bun v1.0.30. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+
+## License
+[MIT License](./LICENSE.md)
