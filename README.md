@@ -17,9 +17,9 @@ The goal of this library is to allow you to use a table reference to refer to ar
 
 # Installation
 To use this script, you should first install it into your GAS project:
-1. Create a GAS project ([Instructions](https://developers.google.com/apps-script/guides/projects#create-and-delete))
+1. **Create a GAS project** ([Instructions](https://developers.google.com/apps-script/guides/projects#create-and-delete))
 	* This library works in standalone and container-bound projects.
-2. Install this library ([Instructions](https://developers.google.com/apps-script/guides/libraries))
+2. **Install this library** ([Instructions](https://developers.google.com/apps-script/guides/libraries))
 	* This library's project key is `1VcRUbO--w71dbJ4yFA8A-vYdzQXwa2sgjHE9230z-cvgCpqNNihZ32jP`
 
 ## Scopes
