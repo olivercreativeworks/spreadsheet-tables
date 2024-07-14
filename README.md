@@ -32,8 +32,9 @@ To initialize the library call the `setSpreadsheet` method:
 const spreadsheet = SpreadsheetApp.openById(YOUR-SPREADSHEET-ID)
 const spreadsheetTables = setSpreadsheet(spreadsheet)
 ```
-To get the Status column from your table called Tasks:
+To get a range using a table reference:
 ```javascript
+//Get the 'Status' column from the 'Tasks' table
 const statusColumn = spreadsheetTables.getRange('Tasks[Status]')
 ```
 The getRange method returns a [SpreadsheetApp.Range](https://developers.google.com/apps-script/reference/spreadsheet/range) object. So you can call methods like this:
@@ -42,7 +43,7 @@ const columnValues = statusColumn.getValues()
 ```
 To get ranges from multiple columns of the same table, you can use the `getRangeList` method:
 ```javascript
-//Assuming Tasks has columns for Status, Owner, and Due Date
+//Get the 'Status', 'Owner', and 'Due Date' columns from the 'Tasks' table
 const taskColumns = spreadsheetTables.getRangeList('Tasks[Status]', 'Tasks[Owner]', 'Tasks[Due Date]')
 ```
 This returns a [SpreadsheetApp.RangeList](https://developers.google.com/apps-script/reference/spreadsheet/range-list) object. So you can call methods like this:
@@ -52,10 +53,10 @@ const columnValues = taskColumns.getRanges().map(range => range.getValues())
 Table references include references to the full table, too:
 ```javascript
 //With header row
-const tableRangeWithHeader = spreadsheetTables.getRange('Tasks[#ALL]')
+const tasksTableWithHeader = spreadsheetTables.getRange('Tasks[#ALL]')
 
 //Without header row
-const tableRange = spreadsheetTables.getRange('Tasks')
+const tasksTable = spreadsheetTables.getRange('Tasks')
 ```
 
 ## Known issues
