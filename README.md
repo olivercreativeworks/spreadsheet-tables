@@ -12,6 +12,9 @@ SpreadsheetApp.getRange('Tasks[Status]')
 ```
 The goal of this script is to allow you to use a table reference to refer to your Google Sheet.
 
+# Library project key
+'1VcRUbO--w71dbJ4yFA8A-vYdzQXwa2sgjHE9230z-cvgCpqNNihZ32jP'
+
 ## Solution
 This script lets you use table references to reference ranges of a Google Sheet.
 
