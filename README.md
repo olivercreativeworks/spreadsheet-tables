@@ -5,7 +5,7 @@ This library lets you use [table references](https://support.google.com/docs/ans
 # Description
 In Google Apps Script, you cannot use table references to refer to areas of a Google Sheet. 
 
-For example, if you have a table called "Tasks" with a column called "Status", the following fails:
+For example, if you have a table reference called "Tasks[Status\]", the following code throws an error:
 ```
 //Throws 'Range not found' error
 SpreadsheetApp.getRange('Tasks[Status]')
