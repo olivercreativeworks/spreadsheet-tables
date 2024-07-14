@@ -1,4 +1,4 @@
-# SpreadsheetTables
+# Table references in google apps script
 
 This script lets you use [table references](https://support.google.com/docs/answer/14239833?hl=en#:~:text=use%20table%20references) in Google Apps Script to reference ranges of a Google Sheet.
 
