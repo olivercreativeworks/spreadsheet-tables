@@ -34,7 +34,7 @@ To initialize the library call the `setSpreadsheet` method:
 const spreadsheet = SpreadsheetApp.openById(YOUR-SPREADSHEET-ID)
 const spreadsheetTables = setSpreadsheet(spreadsheet)
 ```
-To get the Status column from your table called Tasks, you write:
+To get the Status column from your table called Tasks:
 ```
 const statusColumn = spreadsheetTables.getRange('Tasks[Status]')
 ```
