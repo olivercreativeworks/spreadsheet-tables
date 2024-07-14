@@ -28,7 +28,7 @@ This library uses the following scope:
 
 # Usage
 To initialize the library call the `setSpreadsheet` method:
-```
+```javascript
 const spreadsheet = SpreadsheetApp.openById(YOUR-SPREADSHEET-ID)
 const spreadsheetTables = setSpreadsheet(spreadsheet)
 ```
