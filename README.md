@@ -47,6 +47,6 @@ const tableRange = spreadsheetTables.getRange('Tasks')
 ```
 
 ## Known issues
-This script will cause [volatile functions](https://support.google.com/docs/answer/12159115?hl=en#:~:text=Reference%20your%20volatile%20function%20efficiently,TODAY(\)%20refreshes%20every%20day.) to refresh.
+This script will cause [volatile functions](https://support.google.com/docs/answer/12159115?hl=en#:~:text=Reference%20your%20volatile%20function%20efficiently,TODAY()%20refreshes%20every%20day.) to refresh.
 
 This project was created using `bun init` in bun v1.0.30. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
