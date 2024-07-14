@@ -1,6 +1,6 @@
 # Table references in google apps script
 
-This script lets you use [table references](https://support.google.com/docs/answer/14239833?hl=en#:~:text=use%20table%20references) in Google Apps Script to reference ranges of a Google Sheet.
+This library lets you use [table references](https://support.google.com/docs/answer/14239833?hl=en#:~:text=use%20table%20references) in Google Apps Script to reference ranges of a Google Sheet.
 
 # Description
 In Google Apps Script, you cannot use table references to refer to areas of a Google Sheet. 
@@ -10,7 +10,7 @@ For example, if you have a table called "Tasks" with a column called "Status", t
 //Throws 'Range not found' error
 SpreadsheetApp.getRange('Tasks[Status]')
 ```
-The goal of this script is to allow you to use a table reference to refer to your Google Sheet.
+The goal of this library is to allow you to use a table reference to refer to areas of your Google Sheet.
 
 # Library project key
 `1VcRUbO--w71dbJ4yFA8A-vYdzQXwa2sgjHE9230z-cvgCpqNNihZ32jP`
@@ -25,7 +25,7 @@ To use this script, you should first install it into your GAS project:
 	* This library's project key is `1VcRUbO--w71dbJ4yFA8A-vYdzQXwa2sgjHE9230z-cvgCpqNNihZ32jP`
 
 # Usage
-To initialize the script:
+To initialize the library call the `setSpreadsheet` method:
 ```
 const spreadsheet = SpreadsheetApp.openById(YOUR-SPREADSHEET-ID)
 const spreadsheetTables = setSpreadsheet(spreadsheet)
@@ -57,6 +57,6 @@ const tableRange = spreadsheetTables.getRange('Tasks')
 ```
 
 ## Known issues
-This script will cause [volatile functions](https://support.google.com/docs/answer/12159115?hl=en#:~:text=Reference%20your%20volatile%20function%20efficiently,TODAY()%20refreshes%20every%20day.) to refresh.
+This library will cause [volatile functions](https://support.google.com/docs/answer/12159115?hl=en#:~:text=Reference%20your%20volatile%20function%20efficiently,TODAY()%20refreshes%20every%20day.) to refresh.
 
 This project was created using `bun init` in bun v1.0.30. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
