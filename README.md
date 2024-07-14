@@ -10,9 +10,7 @@ For example, if you have a table called "Tasks" with a column called "Status", t
 //Throws 'Range not found' error
 SpreadsheetApp.getRange('Tasks[Status]')
 ```
-If we had a named range defined "Tasks\[Status\]" instead of a table reference, the above call would work. 
-
-The goal of this script is to make the above table reference syntax work like a named range would.
+The goal of this script is to make the above call to a table reference work.
 
 ## Solution
 This script lets you use table references to reference ranges of a Google Sheet.
