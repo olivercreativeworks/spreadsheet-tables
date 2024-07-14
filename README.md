@@ -2,7 +2,7 @@
 
 This library lets you use [table references](https://support.google.com/docs/answer/14239833?hl=en#:~:text=use%20table%20references) in Google Apps Script to reference ranges of a Google Sheet.
 
-# Description
+## Description
 In Google Apps Script, you cannot use table references to refer to areas of a Google Sheet. 
 
 For example, if you have a table reference called "Tasks[Status\]", the following code throws an error:
@@ -12,21 +12,21 @@ SpreadsheetApp.getRange('Tasks[Status]')
 ```
 The goal of this library is to allow you to use a table reference to refer to areas of your Google Sheet.
 
-# Library project key
+## Library project key
 `1VcRUbO--w71dbJ4yFA8A-vYdzQXwa2sgjHE9230z-cvgCpqNNihZ32jP`
 
-# Installation
+## Installation
 To use this script, you should first install it into your GAS project:
 1. **Create a GAS project** ([Instructions](https://developers.google.com/apps-script/guides/projects#create-and-delete))
 	* This library works in standalone and container-bound projects.
 2. **Install this library** ([Instructions](https://developers.google.com/apps-script/guides/libraries))
 	* This library's project key is `1VcRUbO--w71dbJ4yFA8A-vYdzQXwa2sgjHE9230z-cvgCpqNNihZ32jP`
 
-## Scopes
+### Scopes
 This library uses the following scope:
 * `https://www.googleapis.com/auth/spreadsheets`
 
-# Usage
+## Usage
 To initialize the library call the `setSpreadsheet` method:
 ```javascript
 const spreadsheet = SpreadsheetApp.openById(YOUR-SPREADSHEET-ID)
