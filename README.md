@@ -24,6 +24,10 @@ To use this script, you should first install it into your GAS project:
 	* [Instructions](https://developers.google.com/apps-script/guides/libraries)
 	* This library's project key is `1VcRUbO--w71dbJ4yFA8A-vYdzQXwa2sgjHE9230z-cvgCpqNNihZ32jP`
 
+## Scopes
+This library uses the following scope:
+	* `https://www.googleapis.com/auth/spreadsheets`
+
 # Usage
 To initialize the library call the `setSpreadsheet` method:
 ```
