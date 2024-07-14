@@ -6,7 +6,7 @@ This library lets you use [table references](https://support.google.com/docs/ans
 In Google Apps Script, you cannot use table references to refer to areas of a Google Sheet. 
 
 For example, if you have a table reference called "Tasks[Status\]", the following code throws an error:
-```
+```javascript
 //Throws 'Range not found' error
 SpreadsheetApp.getRange('Tasks[Status]')
 ```
@@ -33,24 +33,24 @@ const spreadsheet = SpreadsheetApp.openById(YOUR-SPREADSHEET-ID)
 const spreadsheetTables = setSpreadsheet(spreadsheet)
 ```
 To get the Status column from your table called Tasks:
-```
+```javascript
 const statusColumn = spreadsheetTables.getRange('Tasks[Status]')
 ```
 The getRange method returns a [SpreadsheetApp.Range](https://developers.google.com/apps-script/reference/spreadsheet/range) object. So you can call methods like this:
-```
+```javascript
 const columnValues = statusColumn.getValues()
 ```
 To get ranges from multiple columns of the same table, you can use the `getRangeList` method:
-```
+```javascript
 //Assuming Tasks has columns for Status, Owner, and Due Date
 const taskColumns = spreadsheetTables.getRangeList('Tasks[Status]', 'Tasks[Owner]', 'Tasks[Due Date]')
 ```
 This returns a [SpreadsheetApp.RangeList](https://developers.google.com/apps-script/reference/spreadsheet/range-list) object. So you can call methods like this:
-```
+```javascript
 const columnValues = taskColumns.getRanges().map(range => range.getValues())
 ```
 Table references include references to the full table, too:
-```
+```javascript
 //With header row
 const tableRangeWithHeader = spreadsheetTables.getRange('Tasks[#ALL]')
 
