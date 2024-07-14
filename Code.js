@@ -3,10 +3,10 @@
  * @return {Record<'getRange', (tableRangeName:string) => SpreadsheetApp.Range> & Record<'getRangeList', (...tableRangeNames:string[]) => SpreadsheetApp.RangeList>}
  */
 function setSpreadsheet(spreadsheet){
-  const spreadsheetTables = new SpreadsheetTables_(spreadsheet)
+  const spreadsheetTables = new SpreadsheetTables(spreadsheet)
   return {
-    getRange:spreadsheetTables.getRange,
-    getRangeList:spreadsheetTables.getRangeList
+    getRange:(tableRangeName) => spreadsheetTables.getRange(tableRangeName),
+    getRangeList:(...tableRangeNames) => spreadsheetTables.getRangeList(...tableRangeNames)
   }
 }
 
