@@ -1,6 +1,6 @@
 # SpreadsheetTables
 
-This script lets you use [table references](https://support.google.com/docs/answer/14239833?hl=en#:~:text=use%20table%20references) to reference ranges of a Google Sheet.
+This script lets you use [table references](https://support.google.com/docs/answer/14239833?hl=en#:~:text=use%20table%20references) in Google Apps Script to reference ranges of a Google Sheet.
 
 ## Problem
 In Google Apps Script, you cannot use table references to refer to areas of a Google Sheet. 
@@ -10,7 +10,7 @@ For example, if you have a table called "Tasks" with a column called "Status", t
 //Throws 'Range not found' error
 SpreadsheetApp.getRange('Tasks[Status]')
 ```
-The goal of this script is to make the above call to a table reference work.
+The goal of this script is to allow you to use a table reference to refer to your Google Sheet.
 
 ## Solution
 This script lets you use table references to reference ranges of a Google Sheet.
