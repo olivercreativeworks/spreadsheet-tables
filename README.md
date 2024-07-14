@@ -15,8 +15,7 @@ The goal of this library is to allow you to use a table reference to refer to ar
 # Library project key
 `1VcRUbO--w71dbJ4yFA8A-vYdzQXwa2sgjHE9230z-cvgCpqNNihZ32jP`
 
-# Setup
-## 1. Install library
+# Installation
 To use this script, you should first install it into your GAS project:
 1. Create a GAS project.
 	* This library works in standalone and container-bound projects.
